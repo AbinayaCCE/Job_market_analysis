@@ -1,0 +1,234 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* Header styles */
+header {
+    background-color: #465689;
+    color: #ffffff;
+    padding-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo img {
+    width: 150px;
+    height: 80px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    font-size: 20px;
+}
+
+.navbar li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    position: relative; /* Add this line */
+}
+
+.navbar li a:hover::after, .navbar li a:focus::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2.5px; /* Reduced from 3px to 2px for a thinner line */
+    background-color: #92c1e7; /* Or any color that fits your design */
+    display: block;
+    border-radius: 8px;
+    left: 10%; /* Adjust this value as needed */
+    right: 10%; /* Adjust this value as needed */
+}
+
+
+
+.user-area a {
+    color: #465689;
+    font-weight: 900;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Main content styles */
+.hero {
+    background-image: url(images/Tiny\ people\ searching\ for\ business\ opportunities.jpg);
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    height: 500px; /* Adjust the height as needed */
+    padding: 100px 0; /* Add vertical padding as needed */
+    text-align: center;
+}
+
+.hero1 {
+    background-color: rgba(255, 255, 255, 0.4); /* White color with 50% opacity */
+    padding-bottom: 8%;
+    margin-left: 8%;
+    margin-right: 8%;
+    border-radius: 50px;
+    color: rgb(45, 52, 88);
+}
+
+.hero h1 {
+    padding-top: 10%;
+    font-size: 70px;
+    margin-bottom: 40px;
+}
+
+.hero p {
+    font-size: 28px;
+    font-weight:400;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #f9f9f9;
+    color: #465689;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 20px;
+    font-size: 10px;
+}
+
+.btn:hover {
+    background-color: #a2c7e5;
+}
+.btn1 {
+    background-color: #465689;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+.btn1:hover {
+    background-color: #71b9f4;
+}
+
+
+.btn2 {
+    text-align: center;
+    margin-left: 510px;
+    background-color: #465689;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 20px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.btn2:hover {
+    background-color: #83a6c3;
+}
+
+h1{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.features {
+    padding: 20px 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #bcd8e7;
+    text-align: justify;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    margin-bottom: 50px;
+}
+
+.features {
+    transition: transform 0.3s ease;
+}
+
+.features:hover {
+    background-color: #8dc9f4;
+    transform: scale(1.05); /* Increase the scale on hover */
+}
+
+.features h3 {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.features p{
+    font-size: 22px;
+    font-weight: 550;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+/* About Us section styles */
+.about-us {
+    background-color: #f0f0f0;
+    padding: 50px;
+    text-align: center;
+}
+
+.about-us h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.about-us p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #2e395d;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.social-links {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.social-links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.social-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+}
